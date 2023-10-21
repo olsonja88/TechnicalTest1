@@ -1,0 +1,74 @@
+# Byte-compiled / optimized Python files
+__pycache__/
+*.pyc
+*.pyo
+__init__.py
+
+# Environment-specific settings
+.env
+*.env
+
+# Local development files
+db.sqlite3  # Exclude SQLite database files
+instance/   # Exclude any local instance-specific configuration
+
+# Logs and generated files
+logs/
+*.log
+
+# Virtual environment
+venv/
+.env/
+
+# Dependency directories (Python packages)
+lib/
+lib64/
+bin/
+include/
+.local/
+build/
+dist/
+.eggs/
+node_modules/
+
+# Compiled Python files
+*.pyc
+
+# IDE-specific files and directories
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
+*.suo
+.project
+*.pyc
+
+# Editor backup files
+*~
+*.bak
+
+# Django migration files
+*/migrations/
+
+# macOS directory attributes
+.DS_Store
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Python egg metadata
+*.egg-info/
+.eggs/
+
+# Node.js generated files
+node_modules/
+npm-debug.log
+
+# Compiled TypeScript
+*.js
+
+# Compiled Webpack
+/dist/
