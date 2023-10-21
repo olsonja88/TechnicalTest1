@@ -15,13 +15,9 @@ A simple fullstack application that displays document information.  Made using F
 4. run "python -m venv venv"
 
 ### Backend
-* For Windows
-5. from "TechnicalTest1/backend" run "venv\Scripts\activate"
-6. run "pip install -r requirements.txt"
-7. run "uvicorn main:app --reload"
-
-* For Mac
-5. from "TechnicalTest1/backend" run "source venv/bin/activate"
+5. from "TechnicalTest1/backend"
+* For Windows run "venv\Scripts\activate"
+* For Mac run "source venv/bin/activate"
 6. run "pip install -r requirements.txt"
 7. run "uvicorn main:app --reload"
 
