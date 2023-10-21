@@ -16,10 +16,11 @@ A simple fullstack application that displays document information.  Made using F
 * For Mac
 4. run "source -m venv venv"
 ### Backend
-4. from "TechnicalTest1/backend" run "venv\Scripts\activate"
-5. run "pip install -r requirements.txt"
-6. run "uvicorn main:app --reload"
+5. from "TechnicalTest1/backend" run "venv\Scripts\activate"
+6. run "pip install -r requirements.txt"
+7. run "uvicorn main:app --reload"
 ### Frontend
-7. Open a second command terminal and cd into "TechnicalTest1/frontend/doc-searcher"
-8. run "npm start"
-9. Once the React app is running, you can view the output page at "http://localhost:3000"
+8. Open a second command terminal and cd into "TechnicalTest1/frontend/doc-searcher"
+9. run "npm install"
+10. run "npm start"
+11. Once the React app is running, you can view the output page at "http://localhost:3000"
