@@ -9,11 +9,14 @@ A simple fullstack application that displays document information.  Made using F
 ## How to Run
 ### Installation
 1. Open your git bash
-1. run "git clone (this repos url goes here)"
-2. cd into the backend directory "cd /backend"
-3. run "python -m venv venv"
+2. run "git clone (this repos url goes here)"
+3. cd into the backend directory "cd /backend"
+* For Windows
+4. run "python -m venv venv"
+* For Mac
+4. run "source -m venv venv"
 ### Backend
-4. from TechnicalTest1/backend" run "venv\Scripts\activate"
+4. from "TechnicalTest1/backend" run "venv\Scripts\activate"
 5. run "pip install -r requirements.txt"
 6. run "uvicorn main:app --reload"
 ### Frontend
