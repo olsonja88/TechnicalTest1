@@ -6,17 +6,14 @@ function DocumentView() {
 
     useEffect(() => {
         fetchDocument()
-        .then((data) => {
-            const formattedData = JSON.stringify(data, null, 2);
-            setDocument(data)
-        })
+        .then((data) => setDocument(data))
         .catch((error) => console.error("Error fetching data", error));
     }, []);
 
     return (
         <div>
             <pre>
-                <code>{formattedData}</code>
+                <code>{JSON.stringify(document, null, 2)}</code>
             </pre>
         </div>
     );

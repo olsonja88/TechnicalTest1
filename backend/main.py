@@ -1,20 +1,31 @@
-import logging, uuid, datetime
+import logging, uuid
+from datetime import datetime
 from dateutil.relativedelta import relativedelta
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from starlette.responses import JSONResponse
 
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"]
+)
 
 logging.basicConfig(level=logging.INFO)
 
 @app.get("/")
 def get_data():
     unique_uuid = str(uuid.uuid4())
-    current_time = datetime.now().strftime("%Y-%m-%dT%H:%M:%S.%fZ")
+    current_time = datetime.now()
+    formatted_current_time = current_time.strftime("%Y-%m-%dT%H:%M:%S.%fZ")
     expires_at = (current_time + relativedelta(months=1)).strftime("%Y-%m-%dT%H:%M:%S.%fZ")
     return {"uuid" : unique_uuid,
             "document_name": "Super Top Secret Halloween Costume Ideas",
-            "current_time": current_time,
+            "current_time": formatted_current_time,
             "description": "A list of the best halloween costumes.",
             "expires_at": expires_at}
 

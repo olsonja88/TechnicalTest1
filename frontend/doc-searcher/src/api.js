@@ -13,3 +13,4 @@ export async function fetchDocument() {
     }
 }
 
+export default fetchDocument;
